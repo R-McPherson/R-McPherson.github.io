@@ -1,0 +1,25 @@
+.gridmap{
+    display: grid;
+    padding:1%;
+    height: 100%;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% 5% 80%;
+    gap: 3px;
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n n n n n n n n n n n"
+    "c c c c c c c c c c c c"
+}
+.header{
+    grid-area: h;
+    background-color: violet;
+}
+.navbar{
+    grid-area: n;
+    background-color: orange;
+}
+.content{
+    grid-area: c;
+    background-color: aqua;
+}
